@@ -61,7 +61,7 @@
                 <div class="col-md-6 col-lg-3">
                   <a class="item wow inShow" data-wow-delay="0.55s">
                     <h4>经验</h4>
-                    <div class="info">一年零两个月</div>
+                    <div class="info">两年</div>
                   </a>
                 </div>
                 <div class="col-md-8 col-lg-3">
@@ -337,6 +337,7 @@
       calcDate(birthday){
         let birthdayDate = new Date(birthday);
         let todyDate = new Date();
+        console.log(todyDate.getYear())
         return todyDate.getYear() - birthdayDate.getYear()
       }
     }
